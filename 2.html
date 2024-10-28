@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泡饭的个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .indented{
+            text-indent: 2em;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f5f5f5;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+        .p-inline {
+            display: inline;
+        }
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .beautiful-button {
+            padding: 10px 20px; /* 添加内边距 */
+            font-size: 16px; /* 设置字体大小 */
+            color: #fff; /* 设置文本颜色 */
+            background-color: #007bff; /* 设置背景颜色 */
+            border: none; /* 去除边框 */
+            border-radius: 5px; /* 设置边框圆角 */
+            cursor: pointer; /* 鼠标悬停时显示指针 */
+            transition: background-color 0.3s; /* 添加过渡效果 */
+        }
+
+        .beautiful-button:hover {
+            background-color: #0056b3; /* 鼠标悬停时改变背景颜色 */
+        }
+        .skill-tag {
+            background-color: #e9ecef;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+        .image-container {
+            display: flex; /* 使用flex布局 */
+            justify-content: space-between; /* 图片之间的间距均匀分布 */
+            align-items: center; /* 垂直居中 */
+            padding: 10px; /* 容器内边距 */
+        }
+        .image-container img {
+            width: 24%; /* 每张图片占行宽的24% */
+            height: auto; /* 高度自适应，保持图片比例 */
+            border: 1px solid #ddd; /* 图片边框 */
+            padding: 5px; /* 图片周围填充 */
+        }
+        .contact {
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload-bbs.miyoushe.com/upload/2024/10/28/188479576/d388c14ab1b985885644c686bd78e1b3_1490655106515739052.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png" alt="头像" class="avatar">
+        <h1 class="name">泡饭</h1>
+        <p class="title">浙江师范大学在读学生</p >
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>关于我</h2>
+            <p class="indented">我是一名来自浙江师范大学生物技术制药专业的学生。浙江师范大学是一所历史悠久、学术氛围浓厚的学府，坐落于风景秀丽的金华市。在这里，我不仅接受了扎实的专业知识教育，还参与了丰富的实践活动，这些都极大地丰富了我的大学生活。<br>
+                <br></p>
+                <p><b>教育背景：</b>
+                我在浙江师范大学生物技术制药专业接受了系统的生物学、药学和工程技术教育。通过学习，我对生物制药的基本原理、生产工艺以及质量控制有了深入的理解。此外，我还参与了多个实验室项目，这些项目不仅锻炼了我的实验技能，也培养了我对科学研究的热情。<br>
+                <br></p>
+                <p><b>兴趣爱好：</b>
+                在课余时间，我热爱阅读科学杂志和最新的研究论文，这让我能够紧跟生物技术和制药领域的最新发展。此外，我还喜欢户外运动，比如徒步和骑行，这些活动让我能够保持身心健康，同时也提供了一个放松心情、思考问题的好机会。<br>
+                <br></p>
+                <p><b>实践经验：</b>
+                在校期间，我积极参与了多个与专业相关的实习项目。在一家生物制药公司的实习中，我参与了新药的研发流程，从实验室研究到临床试验的各个阶段，这段经历让我对生物制药行业有了更加直观的认识。<br>
+                <br></p>
+                <p><b>未来规划：</b>
+                我计划在毕业后继续深造，攻读研究生学位，以期在生物技术制药领域有更深入的研究。长远来看，我希望能够在生物制药领域做出自己的贡献，为人类的健康事业尽一份力。<br>
+                <br></p>
+                <p>总的来说，我是一个对生物技术制药充满热情的学生，我期待在未来的学习和工作中不断进步，实现自己的职业目标。</p >
+        </section>
+
+        <section>
+            <h2>技能专长</h2>
+            <div class="skills">
+                <span class="skill-tag">分子生物学技术</span>
+                <span class="skill-tag">细胞培养与分析</span>
+                <span class="skill-tag">药物设计与合成</span>
+                <span class="skill-tag">生物制药工艺</span>
+                <span class="skill-tag">药理学与毒理学评估</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>教育背景</h2>
+            <div class="experience">
+                <h3>浙江师范大学</h3>
+                <p>本科 (2023-2027)</p >
+                <p><b>1. 基础科学课程：</b>
+                    - 生物化学：学习生物体内的化学过程，包括酶的作用机制、代谢途径等。
+                    <br>- 细胞生物学：了解细胞的结构、功能和相互间的相互作用。
+                    <br>- 微生物学：研究微生物的分类、生理、遗传和生态等方面。
+                    <br>- 分子生物学：探讨遗传物质的结构、复制、表达和调控。
+                 <br><br>
+                 <b>2. 专业核心课程：</b>
+                    - 发酵工程：学习利用微生物进行生物转化的过程和技术。
+                    <br>- 药理学：研究药物的作用机制、药效学和药代动力学。
+                    <br>- 药物化学：涉及药物的化学结构、合成方法和药物设计。
+                    <br>- 药物分析：学习药物及其制剂的质量控制和分析方法。
+                    <br>- 药剂学：研究药物制剂的设计、制备和评价。
+                 <br><br>
+                 <b>3. 实践技能培养：</b>
+                    - 实验室技能：包括DNA克隆、基因表达分析、细胞培养等实验操作技能。
+                    <br>- 实习实训：在制药企业进行实习，参与实际生产流程，提升实践能力。
+                 <br><br>
+                 <b>4. 专业选修课程：</b>
+                    - 高级生物化学、人体解剖生理学、分子生物学、细胞工程等，供学生根据兴趣深入学习。
+                 <br><br>
+                 <b>5. 专业拓展课程：</b>
+                    - 中药资源学、酶工程、遗传学、免疫学等，以拓宽学生的知识面和专业视野。
+                 <br><br>
+                <b> 6. 实践教学课程：</b>
+                    - 包括基础性实践、提高性实践和创新创业与劳动实践，如军事技能、思想政治理论课社会<br>
+                    实践、专业见习、生物工艺实训、专业实习和毕业论文等。
+                 <br><br>
+                 <b>7. 学位课程：</b>
+                    - 包括生物化学、微生物学、发酵工程、药物化学、药物分析、药剂学和药理学等。
+                 </p >
+            </div>
+        </section>
+
+        <section>
+            <h2>业余爱好:绘画</h2>
+            <h3>绘画作品</h3>
+            <div class="image-container">
+                
+                <img src="https://upload-bbs.miyoushe.com/upload/2024/10/28/188479576/c66c0a3c70b8b157d6ba49c1f449561f_53134543195571364.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png" alt="图片">
+                <img src="https://upload-bbs.miyoushe.com/upload/2024/10/28/188479576/cd9ac5580d665fa7d9adccf266a9fcad_1200339715372399063.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png" alt="图片">
+                <img src="https://upload-bbs.miyoushe.com/upload/2024/10/28/188479576/a5d360658393894ae90a52ccde17f201_2395787952932141518.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png" alt="图片">
+                <img src="https://upload-bbs.miyoushe.com/upload/2024/10/28/188479576/c3846cce9c4f862e34026d2e505da619_5055046768586824162.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png" alt="图片">
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>联系方式</h2>
+            <p class="p-inline">邮箱：</p><p id="copyText" class="p-inline">1956276745@qq.com</p >
+                <button onclick="copyTextToClipboard()" class="beautiful-button">复制文本</button>
+            <div class="social-links">
+                <a href="https://github.com/paofan25">GitHub</a>
+                <a href="https://weibo.com/u/7959126960">微博</a>
+            </div>
+        </section>
+    </div>
+    <script>
+        function copyTextToClipboard() {
+          // 创建一个文本域元素
+          var copyText = document.getElementById("copyText").innerText;
+          var textArea = document.createElement("textarea");
+          
+          // 设置文本域的内容
+          textArea.value = copyText;
+          
+          // 使文本域不在视图中显示
+          textArea.style.position = "fixed";  
+          textArea.style.left = "-999999px";  
+          textArea.style.top = "-999999px";
+          
+          // 将文本域添加到body中
+          document.body.appendChild(textArea);
+          
+          // 选择文本域中的文本
+          textArea.focus();
+          textArea.select();
+          
+          // 执行复制操作
+          try {
+            var successful = document.execCommand('copy');
+            var msg = successful ? '成功' : '失败';
+            console.log('复制文本 ' + msg);
+          } catch (err) {
+            console.log('无法复制', err);
+          }
+          
+          // 移除文本域
+          document.body.removeChild(textArea);
+        }
+    </script>
+</body>
+</html>
