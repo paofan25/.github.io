@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心理测试</title>
+<script>
+// 假设这是你的测试结果
+var testResults = "你是一个外向的人，喜欢社交和与人交流。";
+
+// 检查是否已经完成支付
+function checkPayment() {
+  // 这里需要集成支付平台的API来检查支付状态
+  // 假设支付成功后，localStorage.setItem('paid', 'true');
+  var paid = localStorage.getItem('paid');
+  if (paid === 'true') {
+    showResults();
+  }
+}
+
+// 显示测试结果
+function showResults() {
+  alert(testResults);
+}
+
+// 完成测试后显示付款二维码
+function showPaymentQR() {
+  var paymentQR = document.getElementById('paymentQR');
+  paymentQR.style.display = 'block';
+}
+
+// 模拟付款成功
+function simulatePayment() {
+  // 设置支付成功标志
+  localStorage.setItem('paid', 'true');
+  // 刷新页面以显示结果
+  window.location.reload();
+}
+</script>
+<style>
+#paymentQR {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+#qrCode {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body onload="checkPayment()">
+
+<h2>心理测试</h2>
+
+<form id="psychTest">
+  <p>1. 你更倾向于与人合作还是独立完成任务？</p >
+  <input type="radio" id="q1a1" name="q1" value="合作">
+  <label for="q1a1">合作</label>
+  <input type="radio" id="q1a2" name="q1" value="独立">
+  <label for="q1a2">独立</label>
+  <!-- 更多题目 -->
+  <br><br>
+  <input type="button" value="完成测试" onclick="showPaymentQR()">
+</form>
+
+<div id="paymentQR">
+  <div id="qrCode">
+    <p>请扫描二维码完成支付</p >
+    <!-- 这里应该是你的二维码图片 -->
+    <img src="qr-code.jpg" alt="支付二维码">
+    <button onclick="simulatePayment()">模拟付款</button>
+  </div>
+</div>
+
+<script>
+// 当用户点击“模拟付款”按钮时，调用simulatePayment函数
+</script>
+
+</body>
+</html>
