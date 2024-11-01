@@ -33,8 +33,8 @@ function showPaymentQR() {
 function simulatePayment() {
   // 设置支付成功标志
   localStorage.setItem('paid', 'true');
-  // 刷新页面以显示结果
-  window.location.reload();
+   // 刷新页面以显示结果
+   window.location.reload();
 }
 </script>
 <style>
@@ -47,12 +47,12 @@ function simulatePayment() {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #qrCode {
-  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #qrCode img {
   width: 200px; /* 调整二维码图片的宽度 */
