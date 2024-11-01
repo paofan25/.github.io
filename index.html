@@ -47,12 +47,16 @@ function simulatePayment() {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #qrCode {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#qrCode img {
+  width: 200px; /* 调整二维码图片的宽度 */
+  height: auto; /* 保持图片的宽高比 */
 }
 </style>
 </head>
@@ -75,7 +79,7 @@ function simulatePayment() {
   <div id="qrCode">
     <p>请扫描二维码完成支付</p >
     <!-- 这里应该是你的二维码图片 -->
-    <img src="qr-code.jpg" alt="支付二维码">
+    < img src="qr-code.png" alt="支付二维码">
     <button onclick="simulatePayment()">模拟付款</button>
   </div>
 </div>
