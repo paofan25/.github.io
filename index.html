@@ -5,43 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="static/plugins/bootstrap-3.4.1/css/bootstrap.css">
   <style>
-    div {
-      width: 300px;
-      height: 300px;
-
+    .miao {
+      width: 100%;
+      margin: auto
     }
   </style>
 </head>
 
 <body>
-  <div></div>
+  <img src="./渐变色系列✨_1_薄荷BH_来自小红书网页版.jpg" alt="" class="miao">
   <script>
-    function getRandomColor(flag) {
-      if (flag) {
-        let str = "#"
-        let arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']
-        for (let i = 1; i <= 6; i++) {
-          let random = Math.floor(Math.floor(Math.random() * arr.length))
-          str += arr[random]
-
-        }
-        return str
-      } else {
-        let r = Math.floor(Math.random() * 256)
-        let g = Math.floor(Math.random() * 256)
-        let b = Math.floor(Math.random() * 256)
-        return `rgb(${r},${g},${b})`
-      }
+    function getRandomdom(N, M) {
+      return Math.floor(Math.random() * (M - N + 1)) + N
     }
-    console.log(getRandomColor(true))
-    const div = document.querySelector("div")
-    div.style.backgroundColor = getRandomColor()
+    const img = document.querySelector('img')
+    const random = getRandomdom(1, 6)
+    img.src = `./渐变色系列✨_${random}_薄荷BH_来自小红书网页版.jpg`
   </script>
-  <script src="static/js/jquery-3.7.1.min.js"></script>
-  <script src="static/plugins/bootstrap-3.4.1/js/bootstrap.js"></script>
-</body>
 </body>
 
 </html>
