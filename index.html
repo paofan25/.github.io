@@ -5,21 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="static/plugins/bootstrap-3.4.1/css/bootstrap.css">
+  <style>
+    div {
+      width: 300px;
+      height: 300px;
+
+    }
+  </style>
 </head>
 
 <body>
+  <div></div>
   <script>
-    let score = Number(prompt("请输入你的成绩："))
-    if (score >= 700) {
-      alert("恭喜考入清华大学")
+    function getRandomColor(flag) {
+      if (flag) {
+        let str = "#"
+        let arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']
+        for (let i = 1; i <= 6; i++) {
+          let random = Math.floor(Math.floor(Math.random() * arr.length))
+          str += arr[random]
+
+        }
+        return str
+      } else {
+        let r = Math.floor(Math.random() * 256)
+        let g = Math.floor(Math.random() * 256)
+        let b = Math.floor(Math.random() * 256)
+        return `rgb(${r},${g},${b})`
+      }
     }
-    if (score >= 0 && score < 700) {
-      alert("你没考入清华大学。")
-    }
-    if (score < 0) {
-      alert("你咋考了负的、")
-    }
+    console.log(getRandomColor(true))
+    const div = document.querySelector("div")
+    div.style.backgroundColor = getRandomColor()
   </script>
+  <script src="static/js/jquery-3.7.1.min.js"></script>
+  <script src="static/plugins/bootstrap-3.4.1/js/bootstrap.js"></script>
+</body>
 </body>
 
 </html>
